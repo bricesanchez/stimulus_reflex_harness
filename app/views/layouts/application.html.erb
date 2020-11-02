@@ -10,7 +10,7 @@
     <%= javascript_pack_tag 'application' %>
   </head>
 
-  <body>
+  <body data-controller="user-session" data-action="user-session:timedout@document->user-session#reload">
     <%= yield %>
   </body>
 </html>
